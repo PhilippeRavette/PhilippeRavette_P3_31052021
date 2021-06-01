@@ -1,0 +1,19 @@
+{
+    "name": "philipperavette_p3_31052021",
+    "version": "1.0.0",
+    "description": "site de commande de repas en ligne",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/issues"
+    },
+    "homepage": "https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021#readme"
+}
