@@ -43,5 +43,9 @@
   font-weight: normal;
   font-style: normal;
 }
+#homepage-bloc {
+  min-width: 375px;
+  max-width: 600px;
+}
 
 /*# sourceMappingURL=style.css.map */
