@@ -1,0 +1,69 @@
+.restaurants-choice {
+    background-color: #f4f4f4;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 58px;
+}
+
+.restaurant-box {
+    background-color: white;
+    border-radius: 15px;
+    height: 252px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 17px;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+figcaption .new-restaurant {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-family: $bold-font;
+    background-color: $color-tertiary;
+    padding: 10px;
+    color: #008766;
+}
+
+.restaurant-photo {
+    width: 100%;
+    height: 175px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.location-info {
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+}
+
+.restaurant-name h3 {
+    margin: 5px;
+    color: black;
+}
+
+.restaurant-name p {
+    margin: 5px;
+    color: black;
+}
+
+h2 {
+    font-family: "shrikhand"
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.heart {
+    color: $color-primary
+}
