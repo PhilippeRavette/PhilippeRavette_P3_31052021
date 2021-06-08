@@ -1,46 +1,48 @@
 @font-face {
-    font-family: "shrikhandregular";
-    src: url("Shrikhand-Regular.ttf");
-}
-
-@font-face {
-    font-family: "roboto";
-    src: url("Roboto-Black.ttf"), url("Roboto-BlackItalic.ttf");
+    font-family: 'shrikhandregular';
+    src: url('/fonts/Shrikhand-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "robotobold";
-    src: url("Roboto-Bold.ttf"), url("Roboto-BoldItalic.ttf");
+    font-family: 'roboto';
+    src: url('/fonts/Roboto-Black.ttf'), url('/fonts/Roboto-BlackItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('/fonts/Roboto-Bold.ttf'), url('/fonts/Roboto-BoldItalic.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "robotoregular";
-    src: url("Roboto-Regular.ttf");
+    font-family: 'robotoregular';
+    src: url('/fonts/Roboto-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "robotomedium";
-    src: url("Roboto-Medium.ttf"), url("Roboto-MediumItalic.ttf");
+    font-family: 'robotomedium';
+    src: url('/fonts/Roboto-Medium.ttf'), url('/fonts/Roboto-MediumItalic.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "robotothin";
-    src: url("Roboto-Thin.ttf"), url("Roboto-ThinItalic.ttf");
+    font-family: 'robotothin';
+    src: url('/fonts/Roboto-Thin.ttf'), url('/fonts/Roboto-ThinItalic.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "robotolight";
-    src: url("Roboto-Light.ttf"), url("Roboto-LightItalic.ttf");
+    font-family: 'robotolight';
+    src: url('/fonts/Roboto-Light.ttf'), url('/fonts/Roboto-LightItalic.ttf');
     font-weight: normal;
     font-style: normal;
 }

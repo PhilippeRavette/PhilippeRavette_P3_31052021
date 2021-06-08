@@ -1,40 +1,42 @@
 @font-face {
   font-family: "shrikhandregular";
-  src: url("Shrikhand-Regular.ttf");
+  src: url("/fonts/Shrikhand-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "roboto";
-  src: url("Roboto-Black.ttf"), url("Roboto-BlackItalic.ttf");
+  src: url("/fonts/Roboto-Black.ttf"), url("/fonts/Roboto-BlackItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotobold";
-  src: url("Roboto-Bold.ttf"), url("Roboto-BoldItalic.ttf");
+  src: url("/fonts/Roboto-Bold.ttf"), url("/fonts/Roboto-BoldItalic.ttf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
-  src: url("Roboto-Regular.ttf");
+  src: url("/fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotomedium";
-  src: url("Roboto-Medium.ttf"), url("Roboto-MediumItalic.ttf");
+  src: url("/fonts/Roboto-Medium.ttf"), url("/fonts/Roboto-MediumItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
-  src: url("Roboto-Thin.ttf"), url("Roboto-ThinItalic.ttf");
+  src: url("/fonts/Roboto-Thin.ttf"), url("/fonts/Roboto-ThinItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotolight";
-  src: url("Roboto-Light.ttf"), url("Roboto-LightItalic.ttf");
+  src: url("/fonts/Roboto-Light.ttf"), url("/fonts/Roboto-LightItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,6 +44,34 @@
   min-width: 375px;
   max-width: 600px;
   margin: 0px;
+}
+
+.logo {
+  text-align: center;
+  font-family: "shrikhandregular";
+  padding-top: 24px;
+}
+
+#localisation {
+  padding: 15px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.search-bar {
+  background-color: #e6e6e6;
+  border: none;
+  font-family: "shrikhandregular";
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.presentation h2 {
+  font-family: "robotobold";
+  text-align: center;
+  padding: 10px 65px 0px 65px;
 }
 
 .restaurants-choice {
@@ -102,7 +132,7 @@ figcaption .new-restaurant {
 }
 
 h2 {
-  font-family: "shrikhand";
+  font-family: "shrikhandregular";
 }
 
 a:link {
