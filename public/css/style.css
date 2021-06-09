@@ -1,42 +1,42 @@
 @font-face {
   font-family: "shrikhandregular";
-  src: url("/fonts/Shrikhand-Regular.ttf");
+  src: url("../../fonts/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "roboto";
-  src: url("/fonts/Roboto-Black.ttf"), url("/fonts/Roboto-BlackItalic.ttf");
+  src: url("../../fonts/Roboto-Black.ttf"), url("../../fonts/Roboto-BlackItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotobold";
-  src: url("/fonts/Roboto-Bold.ttf"), url("/fonts/Roboto-BoldItalic.ttf");
+  src: url("../../fonts/Roboto-Bold.ttf"), url("../../fonts/Roboto-BoldItalic.ttf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
-  src: url("/fonts/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotomedium";
-  src: url("/fonts/Roboto-Medium.ttf"), url("/fonts/Roboto-MediumItalic.ttf");
+  src: url("../../fonts/Roboto-Medium.ttf"), url("../../fonts/Roboto-MediumItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotothin";
-  src: url("/fonts/Roboto-Thin.ttf"), url("/fonts/Roboto-ThinItalic.ttf");
+  src: url("../../fonts/Roboto-Thin.ttf"), url("../../fonts/Roboto-ThinItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotolight";
-  src: url("/fonts/Roboto-Light.ttf"), url("/fonts/Roboto-LightItalic.ttf");
+  src: url("../../fonts/Roboto-Light.ttf"), url("../../fonts/Roboto-LightItalic.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,25 +53,65 @@
 }
 
 #localisation {
-  padding: 15px;
   background-color: #e6e6e6;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 15px;
+  width: 100%;
 }
 
 .search-bar {
   background-color: #e6e6e6;
   border: none;
-  font-family: "shrikhandregular";
-  font-size: 15px;
+  font-family: "robotobold";
+  font-size: 18px;
   padding-left: 20px;
+  text-align: center;
+  width: 43%;
+  height: 50px;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 15px;
 }
 
 .presentation h2 {
   font-family: "robotobold";
   text-align: center;
   padding: 10px 65px 0px 65px;
+}
+
+.presentation p {
+  font-family: "robotolight";
+}
+
+.browse-button {
+  cursor: pointer;
+  border: none;
+  padding: 18px;
+  margin: 15px 0px 40px 0px;
+  color: white;
+  font-family: "robotobold";
+  font-size: 14px;
+  border-radius: 75px;
+  background-image: linear-gradient(-10deg, #9356dc, #ff79da);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: background-image 2s linear 2s, box-shadow 1s;
+}
+.browse-button:hover {
+  background-image: linear-gradient(-10deg, #a16be0, #ff93e1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.operation {
+  padding: 32px 20px 20px 32px;
+}
+
+.operation h2 {
+  font-family: "robotobold";
 }
 
 .restaurants-choice {
@@ -124,6 +164,7 @@ figcaption .new-restaurant {
 .restaurant-name h3 {
   margin: 5px;
   color: black;
+  font-family: "robotobold";
 }
 
 .restaurant-name p {

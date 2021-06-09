@@ -1,0 +1,17 @@
+.browse-button {
+    cursor: pointer;
+    border: none;
+    padding: 18px;
+    margin: 15px 0px 40px 0px;
+    color: white;
+    font-family: $bold-font;
+    font-size: 14px;
+    border-radius: 75px;
+    background-image: $degraded;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: background-image 2s linear 2s, box-shadow 1s;
+    &:hover {
+        background-image: linear-gradient(-10deg, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+}

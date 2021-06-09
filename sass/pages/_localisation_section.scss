@@ -1,15 +1,19 @@
 #localisation {
-    padding: 15px;
     background-color: #e6e6e6;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 15px;
+    width: 100%;
 }
 
 .search-bar {
     background-color: #e6e6e6;
     border: none;
-    font-family: 'shrikhandregular';
-    font-size: 15px;
+    font-family: $bold-font;
+    font-size: 18px;
     padding-left: 20px;
+    text-align: center;
+    width: 43%;
+    height: 50px;
 }
