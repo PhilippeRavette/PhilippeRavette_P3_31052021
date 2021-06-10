@@ -1,0 +1,28 @@
+            footer {
+                background-color: #353535;
+                color: white;
+                padding: 25px;
+                h3 {
+                    font-family: $title-font;
+                    font-size: 20px;
+                }
+            }
+            
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+            }
+            
+            ul a {
+                color: white;
+            }
+            
+            i.fas.fa-utensils {
+                margin-right: 15px;
+                color: white;
+            }
+            
+            i.fas.fa-hands-helping {
+                margin-right: 8px;
+                color: white;
+            }
