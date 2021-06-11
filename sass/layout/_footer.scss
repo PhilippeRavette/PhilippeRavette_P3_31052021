@@ -15,14 +15,24 @@
             
             ul a {
                 color: white;
+                font-family: $general-font;
+                &:hover {
+                    color: $color-primary;
+                }
             }
             
             i.fas.fa-utensils {
                 margin-right: 15px;
                 color: white;
+                &:hover {
+                    color: $color-primary;
+                }
             }
             
             i.fas.fa-hands-helping {
                 margin-right: 8px;
                 color: white;
+                &:hover {
+                    color: $color-primary;
+                }
             }

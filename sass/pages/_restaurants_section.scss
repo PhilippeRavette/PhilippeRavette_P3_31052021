@@ -3,6 +3,11 @@
     width: 100%;
     margin-left: 0px;
     padding-top: 58px;
+    padding-bottom: 15px;
+    h2 {
+        font-family: $bold-font;
+        margin-left: 15px;
+    }
 }
 
 .restaurant-box {
@@ -28,6 +33,7 @@ figcaption .new-restaurant {
     background-color: $color-tertiary;
     padding: 10px;
     color: #008766;
+    border-radius: 5px;
 }
 
 .restaurant-photo {
@@ -46,19 +52,17 @@ figcaption .new-restaurant {
     ;
 }
 
-.restaurant-name h3 {
-    margin: 5px;
-    color: black;
-    font-family: $bold-font;
-}
-
-.restaurant-name p {
-    margin: 5px;
-    color: black;
-}
-
-h2 {
-    font-family: 'shrikhandregular';
+.restaurant-name {
+    h3 {
+        margin: 5px;
+        color: black;
+        font-family: $bold-font;
+    }
+    p {
+        margin: 5px;
+        color: black;
+        font-family: $general-font;
+    }
 }
 
 a:link {

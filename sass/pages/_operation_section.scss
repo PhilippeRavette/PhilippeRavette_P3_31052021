@@ -1,7 +1,50 @@
-.operation {
-    padding: 32px 20px 20px 34px;
-}
-
-.operation h2 {
-    font-family: $bold-font;
-}
+    .operation {
+        padding: 32px 20px 20px 34px;
+        h2 {
+            font-family: $bold-font;
+        }
+        .operation-box {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .operation .function {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        height: 70px;
+        margin-bottom: 16px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: box-shadow 1s ease-out;
+        &:hover {
+            background-color: #f5edff;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        &>p {
+            position: absolute;
+            color: white;
+            margin-left: -14.5px;
+            background-color: $color-primary;
+            border-radius: 30px;
+            padding: 0.25em 0.5em;
+        }
+    }
+    
+    .step {
+        width: 100%;
+        display: flex;
+        font-family: $bold-font;
+        align-items: center;
+        margin-left: 16px;
+        i {
+            color: grey;
+            font-size: larger;
+            padding: 0 15px;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }

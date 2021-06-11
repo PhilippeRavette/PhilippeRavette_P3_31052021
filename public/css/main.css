@@ -53,6 +53,12 @@
   margin: 0px;
 }
 
+.menu-bloc {
+  min-width: 375px;
+  max-width: 600px;
+  margin: 0px;
+}
+
 .logo {
   text-align: center;
   font-family: 'shrikhandregular';
@@ -133,11 +139,87 @@
   font-family: "robotobold";
 }
 
+.operation .operation-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.operation .function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  height: 70px;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: -webkit-box-shadow 1s ease-out;
+  transition: -webkit-box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
+}
+
+.operation .function:hover {
+  background-color: #f5edff;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.operation .function > p {
+  position: absolute;
+  color: white;
+  margin-left: -14.5px;
+  background-color: #9356dc;
+  border-radius: 30px;
+  padding: 0.25em 0.5em;
+}
+
+.step {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "robotobold";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+}
+
+.step i {
+  color: grey;
+  font-size: larger;
+  padding: 0 15px;
+}
+
+.step i:hover {
+  color: #9356dc;
+}
+
 .restaurants-choice {
   background-color: #f4f4f4;
   width: 100%;
   margin-left: 0px;
   padding-top: 58px;
+  padding-bottom: 15px;
+}
+
+.restaurants-choice h2 {
+  font-family: "robotobold";
+  margin-left: 15px;
 }
 
 .restaurant-box {
@@ -163,6 +245,7 @@ figcaption .new-restaurant {
   background-color: #99e2d0;
   padding: 10px;
   color: #008766;
+  border-radius: 5px;
 }
 
 .restaurant-photo {
@@ -196,10 +279,7 @@ figcaption .new-restaurant {
 .restaurant-name p {
   margin: 5px;
   color: black;
-}
-
-h2 {
-  font-family: 'shrikhandregular';
+  font-family: "robotoregular";
 }
 
 a:link {
@@ -228,6 +308,11 @@ ul {
 
 ul a {
   color: white;
+  font-family: "robotoregular";
+}
+
+ul a:hover {
+  color: #9356dc;
 }
 
 i.fas.fa-utensils {
@@ -235,8 +320,16 @@ i.fas.fa-utensils {
   color: white;
 }
 
+i.fas.fa-utensils:hover {
+  color: #9356dc;
+}
+
 i.fas.fa-hands-helping {
   margin-right: 8px;
   color: white;
+}
+
+i.fas.fa-hands-helping:hover {
+  color: #9356dc;
 }
 /*# sourceMappingURL=main.css.map */

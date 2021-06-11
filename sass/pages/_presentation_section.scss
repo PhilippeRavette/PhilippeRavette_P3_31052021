@@ -2,14 +2,12 @@
     background-color: #f6f6f6;
     text-align: center;
     padding: 15px;
-}
-
-.presentation h2 {
-    font-family: $bold-font;
-    text-align: center;
-    padding: 10px 65px 0px 65px
-}
-
-.presentation p {
-    font-family: 'robotolight';
+    h2 {
+        font-family: $bold-font;
+        text-align: center;
+        padding: 10px 65px 0px 65px
+    }
+    p {
+        font-family: 'robotolight';
+    }
 }
