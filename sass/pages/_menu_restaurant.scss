@@ -1,3 +1,11 @@
+.back-arrow {
+    position: absolute;
+    color: black;
+    top: 30px;
+    left: 25px;
+    font-size: 25px;
+}
+
 .cover-photo {
     width: 100%;
     height: 250px;
@@ -6,7 +14,35 @@
     object-fit: cover;
 }
 
-header .back-arrow {
-    color: black;
-    font-size: 25px;
+.restaurant-menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    padding: 10px;
+    margin-top: -35px;
+    position: relative;
+    .set-meal {
+        height: 1160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.restaurant-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+        font-family: $title-font;
+        font-size: 26px;
+    }
+}
+
+.meal-type {
+    font-family: $general-font;
+    margin-left: 20px;
+    padding-bottom: 9px;
+    border-bottom: 4px solid $color-tertiary;
+    width: 12%;
 }
