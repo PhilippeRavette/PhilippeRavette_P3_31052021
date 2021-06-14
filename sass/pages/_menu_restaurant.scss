@@ -22,7 +22,7 @@
     margin-top: -35px;
     position: relative;
     .set-meal {
-        height: 1160px;
+        height: 1000px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -45,4 +45,68 @@
     padding-bottom: 9px;
     border-bottom: 4px solid $color-tertiary;
     width: 12%;
+}
+
+.dish-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+}
+
+.dish-category-la-note {
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dish-choice {
+    background-color: white;
+    height: 70px;
+    width: 335px;
+    border-radius: 20px;
+    box-shadow: -1px 2px 10px #0000002e;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    .dish-name {
+        height: 35px;
+        font-family: $bold-font;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.dish-info-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    .dish {
+        font-family: $general-font;
+    }
+    .dish-price {
+        font-family: $bold-font;
+    }
+}
+
+.selection {
+    position: absolute;
+    background-color: #99e2d0;
+    width: 18%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    right: 10px;
+    height: 70px;
+    .icon-check {
+        color: white;
+        font-size: 25px;
+    }
 }
