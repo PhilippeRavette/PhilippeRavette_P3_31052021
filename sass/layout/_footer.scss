@@ -1,38 +1,42 @@
-            footer {
-                background-color: #353535;
-                color: white;
-                padding: 25px;
-                h3 {
-                    font-family: $title-font;
-                    font-size: 20px;
-                }
-            }
-            
-            ul {
-                list-style-type: none;
-                padding-left: 0px;
-            }
-            
-            ul a {
-                color: white;
-                font-family: $general-font;
-                &:hover {
-                    color: $color-primary;
-                }
-            }
-            
-            i.fas.fa-utensils {
-                margin-right: 15px;
-                color: white;
-                &:hover {
-                    color: $color-primary;
-                }
-            }
-            
-            i.fas.fa-hands-helping {
-                margin-right: 8px;
-                color: white;
-                &:hover {
-                    color: $color-primary;
-                }
-            }
+ footer {
+     background-color: #353535;
+     color: white;
+     padding: 25px;
+     h3 {
+         font-family: $title-font;
+         font-size: 20px;
+     }
+ }
+ 
+ ul {
+     list-style-type: none;
+     padding-left: 0px;
+     line-height: 25px;
+     &:hover {
+         color: $color-primary;
+     }
+ }
+ 
+ ul a {
+     color: white;
+     font-family: $general-font;
+     &:hover {
+         color: $color-primary;
+     }
+ }
+ 
+ .fas.fa-utensils {
+     margin-right: 15px;
+     color: white;
+     &:hover {
+         color: $color-primary;
+     }
+ }
+ 
+ .fas.fa-hands-helping {
+     margin-right: 8px;
+     color: white;
+     &:hover {
+         color: $color-primary;
+     }
+ }
