@@ -1,0 +1,27 @@
+    @keyframes rotate-check {
+        0% {
+            transform: rotate(50deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    
+    @keyframes spinner-anim {
+        0% {
+            opacity: 1
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+    
+    @keyframes fa-rotate-spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }

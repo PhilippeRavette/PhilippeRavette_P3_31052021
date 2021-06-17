@@ -1,12 +1,14 @@
 @import "base/font";
+@import "components/load_spinner";
 @import "layout/header";
 @import "utils/variables";
+@import "utils/mixin";
+@import "utils/keyframes";
 @import "pages/localisation_section";
 @import "pages/presentation_section";
-@import "components/_browse_button";
+@import "components/button";
 @import "pages/operation_section";
 @import "pages/restaurants_section";
 @import "layout/footer";
 @import "pages/menu_restaurant";
-@import "components/order_button";
 @import "components/heart_animation"

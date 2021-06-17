@@ -1,0 +1,5 @@
+@mixin footer-hover {
+    :hover {
+        color: $color-primary;
+    }
+}

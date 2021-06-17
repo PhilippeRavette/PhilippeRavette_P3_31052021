@@ -108,5 +108,9 @@
     .icon-check {
         color: white;
         font-size: 25px;
+        &:hover {
+            animation: rotate-check 500ms ease-in-out 1 forwards;
+            cursor: pointer;
+        }
     }
 }
