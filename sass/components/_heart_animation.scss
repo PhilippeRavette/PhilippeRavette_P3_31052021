@@ -8,4 +8,27 @@
 .first-icon {
     position: absolute;
     transform: scale(1);
+    opacity: 1;
+}
+
+.hover-icon {
+    transition: transform 2000ms ease-in-out;
+    font-size: 30px;
+    position: absolute;
+    display: block;
+    background-image: $degraded;
+    color: transparent;
+    visibility: visible;
+    right: 1px;
+    bottom: 2px;
+    opacity: 0;
+}
+
+.heart :hover {
+    .hover-icon {
+        animation: heart 2s forwards
+    }
+    .first-icon {
+        opacity: 0;
+    }
 }
