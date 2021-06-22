@@ -1,5 +1,5 @@
 .heart {
-    width: 50px;
+    width: 35px;
     height: 35px;
     position: relative;
     font-size: 30px;
@@ -16,18 +16,16 @@
     font-size: 30px;
     position: absolute;
     display: block;
-    background-image: $degraded;
     color: transparent;
     visibility: visible;
     right: 1px;
     bottom: 2px;
     opacity: 0;
+    color: $color-primary;
 }
 
-.heart :hover {
-    .hover-icon {
-        animation: heart 2s forwards
-    }
+i.hover-icon:hover {
+    animation: heart 2s forwards;
     .first-icon {
         opacity: 0;
     }

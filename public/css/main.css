@@ -439,10 +439,6 @@ a:link {
   text-decoration: none;
 }
 
-.heart {
-  color: #9356dc;
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -673,7 +669,7 @@ ul a :hover {
 }
 
 .heart {
-  width: 50px;
+  width: 35px;
   height: 35px;
   position: relative;
   font-size: 30px;
@@ -694,20 +690,20 @@ ul a :hover {
   font-size: 30px;
   position: absolute;
   display: block;
-  background-image: linear-gradient(-10deg, #9356dc, #ff79da);
   color: transparent;
   visibility: visible;
   right: 1px;
   bottom: 2px;
   opacity: 0;
+  color: #9356dc;
 }
 
-.heart :hover .hover-icon {
+i.hover-icon:hover {
   -webkit-animation: heart 2s forwards;
           animation: heart 2s forwards;
 }
 
-.heart :hover .first-icon {
+i.hover-icon:hover .first-icon {
   opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */
