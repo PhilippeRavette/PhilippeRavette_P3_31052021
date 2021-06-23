@@ -91,26 +91,26 @@
 
 @-webkit-keyframes slide-menu {
   0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
 
 @keyframes slide-menu {
   0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
@@ -137,6 +137,48 @@
 }
 
 @keyframes heart {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
   0% {
     opacity: 0.1;
   }
@@ -563,8 +605,8 @@ ul a :hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 240px;
-  -webkit-animation: slide-menu 2s;
-          animation: slide-menu 2s;
+  -webkit-animation: slide-menu 1s;
+          animation: slide-menu 1s;
 }
 
 .dish-category-la-note {
@@ -579,8 +621,8 @@ ul a :hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation: slide-menu 2s;
-          animation: slide-menu 2s;
+  -webkit-animation: slide-menu 1s;
+          animation: slide-menu 1s;
 }
 
 .dish-choice {
@@ -673,37 +715,28 @@ ul a :hover {
   height: 35px;
   position: relative;
   font-size: 30px;
+  right: 20px;
 }
 
-.first-icon {
-  position: absolute;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
-
-.hover-icon {
-  -webkit-transition: -webkit-transform 2000ms ease-in-out;
-  transition: -webkit-transform 2000ms ease-in-out;
-  transition: transform 2000ms ease-in-out;
-  transition: transform 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+.heart-menu {
+  width: 35px;
+  height: 35px;
+  position: relative;
   font-size: 30px;
-  position: absolute;
-  display: block;
+}
+
+.heart-icon {
+  font-size: 30px;
+  color: black;
+}
+
+.heart-icon:hover {
+  -webkit-animation: fill 1s ease-out;
+          animation: fill 1s ease-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  font-weight: bold;
+  background-clip: text;
   color: transparent;
-  visibility: visible;
-  right: 1px;
-  bottom: 2px;
-  opacity: 0;
-  color: #9356dc;
-}
-
-i.hover-icon:hover {
-  -webkit-animation: heart 2s forwards;
-          animation: heart 2s forwards;
-}
-
-i.hover-icon:hover .first-icon {
-  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,32 +1,26 @@
-.heart {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    font-size: 30px;
-}
-
-.first-icon {
-    position: absolute;
-    transform: scale(1);
-    opacity: 1;
-}
-
-.hover-icon {
-    transition: transform 2000ms ease-in-out;
-    font-size: 30px;
-    position: absolute;
-    display: block;
-    color: transparent;
-    visibility: visible;
-    right: 1px;
-    bottom: 2px;
-    opacity: 0;
-    color: $color-primary;
-}
-
-i.hover-icon:hover {
-    animation: heart 2s forwards;
-    .first-icon {
-        opacity: 0;
+    .heart {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        font-size: 30px;
+        right: 20px;
     }
-}
+    
+    .heart-menu {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        font-size: 30px;
+    }
+    
+    .heart-icon {
+        font-size: 30px;
+        color: black;
+        &:hover {
+            animation: fill 1s ease-out;
+            background: linear-gradient($color-secondary, $color-primary);
+            font-weight: bold;
+            background-clip: text;
+            color: transparent;
+        }
+    }
