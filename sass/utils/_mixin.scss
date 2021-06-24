@@ -1,5 +1,11 @@
 @mixin footer-hover {
-    :hover {
+     :hover {
         color: $color-primary;
     }
+}
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }

@@ -71,15 +71,35 @@
     box-shadow: -1px 2px 10px #0000002e;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
     flex-direction: column;
     padding: 0 10px 0 10px;
-    .dish-name {
-        height: 35px;
-        font-family: $bold-font;
-        align-items: center;
-        display: flex;
+    overflow: hidden;
+    &:hover {
+        .selection {
+            transform: scaleX(1)
+        }
+        .icon-check {
+            animation: rotate-check 500ms ease-in-out 1 forwards;
+            cursor: pointer;
+        }
+        .dish-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .dish {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
+}
+
+.dish-name {
+    height: 35px;
+    font-family: $bold-font;
+    align-items: center;
+    display: flex;
 }
 
 .dish-info-price {
@@ -98,22 +118,20 @@
 
 .selection {
     position: absolute;
-    background-color: #99e2d0;
-    width: 18%;
-    border-bottom-right-radius: 20px;
+    background: $color-tertiary;
     border-top-right-radius: 20px;
-    align-items: center;
+    border-bottom-right-radius: 20px;
+    width: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
+    align-items: center;
     right: 10px;
-    height: 70px;
-    transform: scale(0);
+    transform: scaleX(0);
+    transition: 500ms;
+    transform-origin: right;
     .icon-check {
         color: white;
         font-size: 25px;
-        &:hover {
-            animation: rotate-check 500ms ease-in-out 1 forwards;
-            cursor: pointer;
-        }
     }
 }
