@@ -221,32 +221,16 @@
   }
 }
 
-@-webkit-keyframes choixone {
-  0% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes choixone {
-  0% {
-    -webkit-transform: translateY(25px);
-            transform: translateY(25px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
+/*@keyframes choixone {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}*/
 .loader-spinner {
   position: fixed;
   width: 100%;
@@ -780,32 +764,53 @@ ul a :hover {
 }
 
 .heart {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   position: relative;
   font-size: 30px;
   right: 20px;
 }
 
 .heart-menu {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   position: relative;
   font-size: 30px;
 }
 
-.heart-icon {
+.heart-icon-empty {
+  -webkit-transform: scale(1);
+          transform: scale(1);
   font-size: 30px;
-  color: black;
+  position: absolute;
+  top: 0;
+  opacity: 1;
 }
 
-.heart-icon:hover {
-  -webkit-animation: fill 1s ease-out;
-          animation: fill 1s ease-out;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  font-weight: bold;
+.heart-icon-full {
+  -webkit-transition: -webkit-transform 1000ms ease-in-out;
+  transition: -webkit-transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  font-size: 30px;
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(-10deg, #9356dc, #ff79da);
   background-clip: text;
   color: transparent;
+  visibility: visible;
+  opacity: 0;
+}
+
+.heart-menu:hover .heart-icon-full {
+  -webkit-animation: fill 2000ms forwards;
+          animation: fill 2000ms forwards;
+  /* transform: scale(1);
+           transition: transform 800ms;
+           transform-origin: bottom;*/
+}
+
+.heart-menu:hover .heart-icon-empty {
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,26 +1,46 @@
     .heart {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         position: relative;
         font-size: 30px;
         right: 20px;
     }
     
     .heart-menu {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         position: relative;
         font-size: 30px;
     }
     
-    .heart-icon {
+    .heart-icon-empty {
+        transform: scale(1);
         font-size: 30px;
-        color: black;
-        &:hover {
-            animation: fill 1s ease-out;
-            background: linear-gradient($color-secondary, $color-primary);
-            font-weight: bold;
-            background-clip: text;
-            color: transparent;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+    }
+    
+    .heart-icon-full {
+        transition: transform 1000ms ease-in-out;
+        font-size: 30px;
+        position: absolute;
+        display: block;
+        background-image: $degraded;
+        background-clip: text;
+        color: transparent;
+        visibility: visible;
+        opacity: 0;
+    }
+    
+    .heart-menu:hover {
+        .heart-icon-full {
+            animation: fill 2000ms forwards;
+            /* transform: scale(1);
+           transition: transform 800ms;
+           transform-origin: bottom;*/
+        }
+        .heart-icon-empty {
+            opacity: 0;
         }
     }
