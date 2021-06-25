@@ -660,7 +660,7 @@ ul a :hover {
 .dish-choice {
   background-color: white;
   height: 70px;
-  width: 335px;
+  width: 100%;
   border-radius: 20px;
   -webkit-box-shadow: -1px 2px 10px #0000002e;
           box-shadow: -1px 2px 10px #0000002e;
@@ -673,7 +673,9 @@ ul a :hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 10px 0 10px;
+  /*padding: 0 10px 0 10px;*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -700,8 +702,14 @@ ul a :hover {
   overflow: hidden;
 }
 
+.dish-choice:hover .dish-price {
+  margin-right: 70px;
+  -webkit-transition: margin-right 500ms;
+  transition: margin-right 500ms;
+}
+
 .dish-name {
-  height: 35px;
+  height: 50%;
   font-family: "robotobold";
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -709,6 +717,7 @@ ul a :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 10px;
 }
 
 .dish-info-price {
@@ -719,18 +728,20 @@ ul a :hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .dish-info-price .dish {
   font-family: "robotoregular";
+  margin-left: 10px;
 }
 
 .dish-info-price .dish-price {
   font-family: "robotobold";
+  margin-right: 10px;
 }
 
 .selection {
@@ -763,19 +774,21 @@ ul a :hover {
   font-size: 25px;
 }
 
-.heart {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  font-size: 30px;
-  right: 20px;
-}
-
 .heart-menu {
   width: 30px;
   height: 30px;
   position: relative;
   font-size: 30px;
+  color: black;
+}
+
+.heart-index {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  font-size: 30px;
+  color: black;
+  right: 20px;
 }
 
 .heart-icon-empty {
@@ -788,10 +801,10 @@ ul a :hover {
 }
 
 .heart-icon-full {
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 800ms ease-in-out;
+  transition: -webkit-transform 800ms ease-in-out;
+  transition: transform 800ms ease-in-out;
+  transition: transform 800ms ease-in-out, -webkit-transform 800ms ease-in-out;
   font-size: 30px;
   position: absolute;
   display: block;
@@ -802,15 +815,17 @@ ul a :hover {
   opacity: 0;
 }
 
-.heart-menu:hover .heart-icon-full {
-  -webkit-animation: fill 2000ms forwards;
-          animation: fill 2000ms forwards;
+.heart-menu:hover .heart-icon-full,
+.heart-index:hover .heart-icon-full {
+  -webkit-animation: fill 1000ms forwards;
+          animation: fill 1000ms forwards;
   /* transform: scale(1);
            transition: transform 800ms;
            transform-origin: bottom;*/
 }
 
-.heart-menu:hover .heart-icon-empty {
+.heart-menu:hover .heart-icon-empty,
+.heart-index:hover .heart-icon-empty {
   opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */
