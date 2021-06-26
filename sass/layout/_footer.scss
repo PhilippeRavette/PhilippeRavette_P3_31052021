@@ -13,6 +13,14 @@ ul {
     padding-left: 0px;
     line-height: 25px;
     @include footer-hover;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 ul a {

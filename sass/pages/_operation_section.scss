@@ -6,6 +6,14 @@
     .operation-box {
         display: flex;
         flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between
+        }
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between
+        }
     }
 }
 
@@ -30,6 +38,15 @@
         background-color: $color-primary;
         border-radius: 30px;
         padding: 0.25em 0.5em;
+    }
+}
+
+.function {
+    @include desktop {
+        width: 30%;
+    }
+    @include tablet {
+        width: 30%
     }
 }
 

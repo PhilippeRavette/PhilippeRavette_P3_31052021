@@ -270,15 +270,10 @@
   padding-top: 24px;
 }
 
-#homepage-bloc {
-  min-width: 375px;
-  max-width: 600px;
-  margin: 0px;
-}
-
+#homepage-bloc,
 .menu-bloc {
   min-width: 375px;
-  max-width: 600px;
+  max-width: 1440 px;
   margin: 0px;
 }
 
@@ -376,6 +371,30 @@
           flex-direction: column;
 }
 
+@media screen and (min-width: 1260px) {
+  .operation .operation-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .operation .operation-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .operation .function {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,6 +433,18 @@
   padding: 0.25em 0.5em;
 }
 
+@media screen and (min-width: 1260px) {
+  .function {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .function {
+    width: 30%;
+  }
+}
+
 .step {
   width: 100%;
   display: -webkit-box;
@@ -444,9 +475,25 @@
   padding-bottom: 15px;
 }
 
+@media screen and (min-width: 1260px) {
+  .restaurants-choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 99.5%;
+  }
+}
+
 .restaurants-choice h2 {
   font-family: "robotobold";
   margin-left: 15px;
+}
+
+@media screen and (min-width: 1260px) {
+  .restaurants-choice h2 {
+    position: absolute;
+    margin-top: -50px;
+  }
 }
 
 .restaurant-box {
@@ -456,6 +503,12 @@
   width: 95%;
   margin: auto;
   margin-bottom: 17px;
+}
+
+@media screen and (min-width: 1260px) {
+  .restaurant-box {
+    width: 24%;
+  }
 }
 
 figure {
@@ -534,6 +587,28 @@ ul :hover {
   color: #9356dc;
 }
 
+@media screen and (min-width: 1260px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 ul a {
   color: white;
   font-family: "robotoregular";
@@ -599,6 +674,15 @@ ul a :hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1260px) {
+  .restaurant-menu .set-meal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .restaurant-title {

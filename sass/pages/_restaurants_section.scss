@@ -4,9 +4,17 @@
     margin-left: 0px;
     padding-top: 58px;
     padding-bottom: 15px;
+    @include desktop {
+        display: flex;
+        width: 99.5%;
+    }
     h2 {
         font-family: $bold-font;
         margin-left: 15px;
+        @include desktop {
+            position: absolute;
+            margin-top: -50px;
+        }
     }
 }
 
@@ -17,6 +25,9 @@
     width: 95%;
     margin: auto;
     margin-bottom: 17px;
+    @include desktop {
+        width: 24%;
+    }
 }
 
 figure {
