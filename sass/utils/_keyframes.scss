@@ -28,27 +28,6 @@
     }
 }
 
-@keyframes heart {
-    0% {
-        opacity: 0.1
-    }
-    20% {
-        opacity: 0.2
-    }
-    40% {
-        opacity: 0.4
-    }
-    60% {
-        opacity: 0.6
-    }
-    80% {
-        opacity: 0.8
-    }
-    100% {
-        opacity: 1
-    }
-}
-
 @keyframes fill {
     0% {
         opacity: 0.1
@@ -78,15 +57,3 @@
         transform: rotate(360deg)
     }
 }
-
-
-/*@keyframes choixone {
-    0% {
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}*/

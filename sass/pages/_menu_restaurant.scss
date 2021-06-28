@@ -27,7 +27,9 @@
         flex-direction: column;
         justify-content: space-between;
         @include desktop {
-            flex-direction: row
+            flex-direction: row;
+            justify-content: space-around;
+            height: 300px;
         }
     }
 }
@@ -47,7 +49,7 @@
     margin-left: 20px;
     padding-bottom: 9px;
     border-bottom: 4px solid $color-tertiary;
-    width: 12%;
+    width: 40px;
 }
 
 .dish-category {
@@ -56,6 +58,9 @@
     justify-content: space-between;
     height: 240px;
     animation: slide-menu 1s;
+    @include desktop {
+        width: 355px
+    }
 }
 
 .dish-category-la-note {
@@ -64,6 +69,9 @@
     flex-direction: column;
     justify-content: space-between;
     animation: slide-menu 1s;
+    @include desktop {
+        width: 355px
+    }
 }
 
 .dish-choice {
@@ -75,7 +83,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    /*padding: 0 10px 0 10px;*/
+    position: relative;
     @include ellipsis-text;
     &:hover {
         .selection {
@@ -132,7 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 10px;
+    right: 0px;
     transform: scaleX(0);
     transition: 500ms;
     transform-origin: right;
@@ -140,4 +148,9 @@
         color: white;
         font-size: 25px;
     }
+}
+
+.order {
+    display: flex;
+    justify-content: center;
 }
