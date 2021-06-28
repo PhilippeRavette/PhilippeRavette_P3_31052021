@@ -1,48 +1,48 @@
-footer {
-    background-color: #353535;
-    color: white;
-    padding: 25px;
-    h3 {
-        font-family: $title-font;
-        font-size: 20px;
-        @include tablet {
-            text-align: center;
+        footer {
+            background-color: #353535;
+            color: white;
+            padding: 25px;
+            h3 {
+                font-family: $title-font;
+                font-size: 20px;
+                @include tablet {
+                    text-align: center;
+                }
+                @include desktop {
+                    text-align: center;
+                }
+            }
         }
-        @include desktop {
-            text-align: center;
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0px;
+            line-height: 25px;
+            @include footer-hover;
+            @include desktop {
+                display: flex;
+                justify-content: space-between;
+            }
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+            }
         }
-    }
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0px;
-    line-height: 25px;
-    @include footer-hover;
-    @include desktop {
-        display: flex;
-        justify-content: space-between;
-    }
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-ul a {
-    color: white;
-    font-family: $general-font;
-    @include footer-hover;
-}
-
-.fas.fa-utensils {
-    margin-right: 15px;
-    color: white;
-    @include footer-hover;
-}
-
-.fas.fa-hands-helping {
-    margin-right: 8px;
-    color: white;
-    @include footer-hover
-}
+        
+        ul a {
+            color: white;
+            font-family: $general-font;
+            @include footer-hover;
+        }
+        
+        .fas.fa-utensils {
+            margin-right: 15px;
+            color: white;
+            @include footer-hover;
+        }
+        
+        .fas.fa-hands-helping {
+            margin-right: 8px;
+            color: white;
+            @include footer-hover
+        }
