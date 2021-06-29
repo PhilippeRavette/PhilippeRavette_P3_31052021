@@ -222,6 +222,7 @@
 .menu-bloc {
   min-width: 375px;
   margin: 0px;
+  /*max-width: 3000px;*/
 }
 
 #localisation {
