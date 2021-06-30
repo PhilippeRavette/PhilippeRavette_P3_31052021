@@ -3,7 +3,11 @@ C 'est le troisième projet du parcours "Développeur web" qui est une fromation
 
 Vous pouvez retrouver le [brief complet ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/f58f44038e073f9f610c94f68c0f05efea41b2c0/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 
-Vous pouvez retrouver le ![la maquette de la page d'acceuil ici](./Maquettes Ohmyfood\maquettes\Accueil.png)
+Vous pouvez retrouver le ![la maquette de la page d'acceuil ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Accueil.png)
+
+Vous pouvez retrouver le ![la maquette de la page d'un menu de restaurant ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Menu%20-%20La%20palette%20du%20go%C3%BBt.png)
+
+
 ## Objectifs
 
 1. Développer un site proposant le menu de 4 grands restaurants parisiens.
