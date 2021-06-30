@@ -1,47 +1,47 @@
-    .heart-menu {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        font-size: 30px;
-        color: black;
-    }
-    
-    .heart-index {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        font-size: 30px;
-        color: black;
-        right: 20px;
-    }
-    
-    .heart-icon-empty {
-        transform: scale(1);
-        font-size: 30px;
-        position: absolute;
-        top: 0;
-        opacity: 1;
-    }
-    
-    .heart-icon-full {
-        transition: transform 800ms ease-in-out;
-        font-size: 30px;
-        position: absolute;
-        display: block;
-        background-image: $degraded;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        visibility: visible;
-        opacity: 0;
-    }
-    
-    .heart-menu:hover,
-    .heart-index:hover {
-        .heart-icon-full {
-            animation: fill 1000ms forwards;
+        .heart-menu {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            font-size: 30px;
+            color: black;
         }
+        
+        .heart-index {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            font-size: 30px;
+            color: black;
+            right: 20px;
+        }
+        
         .heart-icon-empty {
+            transform: scale(1);
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            opacity: 1;
+        }
+        
+        .heart-icon-full {
+            transition: transform 800ms ease-in-out;
+            font-size: 30px;
+            position: absolute;
+            display: block;
+            background-image: $degraded;
+            /* background-clip: text;*/
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            visibility: visible;
             opacity: 0;
         }
-    }
+        
+        .heart-menu:hover,
+        .heart-index:hover {
+            .heart-icon-full {
+                animation: fill 1000ms forwards;
+            }
+            .heart-icon-empty {
+                opacity: 0;
+            }
+        }
