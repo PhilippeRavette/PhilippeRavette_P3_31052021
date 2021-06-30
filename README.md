@@ -3,18 +3,15 @@ C 'est le troisième projet du parcours "Développeur web" qui est une fromation
 
 Vous pouvez retrouver le [brief complet ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/f58f44038e073f9f610c94f68c0f05efea41b2c0/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
 
-Vous pouvez retrouver le ![la maquette de la page d'acceuil ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Accueil.png)
+![la maquette de la page d'acceuil ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Accueil.png)
 
-Vous pouvez retrouver le ![la maquette de la page d'un menu de restaurant ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Menu%20-%20La%20palette%20du%20go%C3%BBt.png)
+![la maquette de la page d'un menu de restaurant ici](https://github.com/PhilippeRavette/PhilippeRavette_P3_31052021/blob/master/Maquettes%20Ohmyfood/maquettes/Menu%20-%20La%20palette%20du%20go%C3%BBt.png)
 
 
 ## Objectifs
 
 1. Développer un site proposant le menu de 4 grands restaurants parisiens.
 2. Permettre la réservation en ligne et la composition de menus.
-
-## Livrables
-
 ### Pages à intégrer selon les maquettes
 
 - **Page d’accueil**
@@ -41,7 +38,7 @@ Vous pouvez retrouver le ![la maquette de la page d'un menu de restaurant ici](h
 
 **Interdit:** Javascript / Frameworks CSS / Inline CSS
 
-## Notes
+## Contraintes
 
 **Polices :**
 - Logo & titres: Shrikhand
@@ -55,7 +52,7 @@ Vous pouvez retrouver le ![la maquette de la page d'un menu de restaurant ici](h
 **Contraintes :**
 - Approche mobile-first: oui
 - Maquette mobile : oui
-- Maquette desktop : à improviser
-- Validation W3C HTML : à passer, warning autorisés
-- Validation W3C CSS : à passer, warning autorisés
+- Maquette desktop et tablette: libre choix 
+- Validation W3C HTML : sans erreur, warning autorisés
+- Validation W3C CSS : sans erreur, warning autorisés
 - Compatibilité : Dernières versions de Chrome, Firefox & Safari
