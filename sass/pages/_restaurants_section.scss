@@ -1,3 +1,5 @@
+/*restaurant section in homepage*/
+
 .restaurants-choice {
     background-color: #f4f4f4;
     width: 100%;
@@ -57,9 +59,8 @@ figcaption .new-restaurant {
 
 .location-info {
     padding-left: 15px;
-    display: flex;
+    @include flex-align-center;
     justify-content: space-between;
-    align-items: center;
     ;
 }
 

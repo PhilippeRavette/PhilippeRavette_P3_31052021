@@ -4,6 +4,17 @@
     }
 }
 
+@mixin flex-justify-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
 @mixin ellipsis-text {
     text-overflow: ellipsis;
     white-space: nowrap;

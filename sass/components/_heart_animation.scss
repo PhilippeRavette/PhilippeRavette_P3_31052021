@@ -1,3 +1,5 @@
+        /*heart in restaurant menu page*/
+        
         .heart-menu {
             width: 30px;
             height: 30px;
@@ -5,6 +7,7 @@
             font-size: 30px;
             color: black;
         }
+        /*heart in home page*/
         
         .heart-index {
             width: 30px;
@@ -14,6 +17,7 @@
             color: black;
             right: 20px;
         }
+        /*heart-icon-empty*/
         
         .heart-icon-empty {
             transform: scale(1);
@@ -22,6 +26,7 @@
             top: 0;
             opacity: 1;
         }
+        /*heart-icon-full*/
         
         .heart-icon-full {
             transition: transform 800ms ease-in-out;
@@ -35,6 +40,7 @@
             visibility: visible;
             opacity: 0;
         }
+        /*heart hover*/
         
         .heart-menu:hover,
         .heart-index:hover {

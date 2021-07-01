@@ -1,8 +1,8 @@
+/*localisation section*/
+
 #localisation {
     background-color: #e6e6e6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-justify-align-center;
     margin-top: 15px;
     width: 100%;
 }

@@ -1,3 +1,5 @@
+/*key frames for load spinner anim*/
+
 @keyframes spinner-anim {
     0% {
         opacity: 1;
@@ -17,6 +19,9 @@
     }
 }
 
+
+/*keyframes for dishes choice*/
+
 @keyframes slide-menu {
     0% {
         transform: scale(0);
@@ -27,6 +32,18 @@
         opacity: 1;
     }
 }
+
+@keyframes rotate-check {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+/*keyframes for heart fill*/
 
 @keyframes fill {
     0% {
@@ -46,14 +63,5 @@
     }
     100% {
         opacity: 1
-    }
-}
-
-@keyframes rotate-check {
-    0% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(360deg)
     }
 }

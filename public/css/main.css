@@ -47,6 +47,7 @@
   font-style: normal;
 }
 
+/*key frames for load spinner anim*/
 @-webkit-keyframes spinner-anim {
   0% {
     opacity: 1;
@@ -56,7 +57,6 @@
     visibility: hidden;
   }
 }
-
 @keyframes spinner-anim {
   0% {
     opacity: 1;
@@ -89,6 +89,7 @@
   }
 }
 
+/*keyframes for dishes choice*/
 @-webkit-keyframes slide-menu {
   0% {
     -webkit-transform: scale(0);
@@ -101,7 +102,6 @@
     opacity: 1;
   }
 }
-
 @keyframes slide-menu {
   0% {
     -webkit-transform: scale(0);
@@ -111,48 +111,6 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fill {
-  0% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fill {
-  0% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  40% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.6;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -179,11 +137,55 @@
   }
 }
 
+/*keyframes for heart fill*/
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*load spinner*/
 .loader-spinner {
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: white;
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +195,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 4;
   -webkit-animation: spinner-anim 3s linear both;
           animation: spinner-anim 3s linear both;
   -webkit-animation-delay: 0.2s;
@@ -212,6 +213,7 @@
           animation-delay: 0.1s;
 }
 
+/*header section*/
 .logo {
   text-align: center;
   font-family: 'shrikhandregular';
@@ -225,17 +227,18 @@
   /*max-width: 3000px;*/
 }
 
+/*localisation section*/
 #localisation {
   background-color: #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
   width: 100%;
 }
@@ -251,6 +254,7 @@
   height: 50px;
 }
 
+/*presentation site section*/
 .presentation {
   background-color: #f6f6f6;
   text-align: center;
@@ -267,6 +271,7 @@
   font-family: 'robotolight';
 }
 
+/*button base*/
 .btn-browse {
   cursor: pointer;
   border: none;
@@ -289,11 +294,13 @@
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+/*presentation button*/
 .btn-present {
   padding: 18px;
   margin: 15px 0px 40px 0px;
 }
 
+/*order button*/
 .btn-order {
   height: 50px;
   width: 200px;
@@ -301,6 +308,7 @@
   margin: 50px 0px 70px 0px;
 }
 
+/*opeartion section*/
 .operation {
   padding: 32px 20px 20px 34px;
 }
@@ -347,13 +355,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
   height: 70px;
@@ -398,10 +406,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "robotobold";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "robotobold";
   margin-left: 16px;
 }
 
@@ -415,6 +423,7 @@
   color: #9356dc;
 }
 
+/*restaurant section in homepage*/
 .restaurants-choice {
   background-color: #f4f4f4;
   width: 100%;
@@ -490,12 +499,12 @@ figcaption .new-restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .restaurant-name h3 {
@@ -514,6 +523,7 @@ a:link {
   text-decoration: none;
 }
 
+/*footer section*/
 footer {
   background-color: #353535;
   color: white;
@@ -596,6 +606,7 @@ ul a :hover {
   color: #9356dc;
 }
 
+/* arrow to return on homepage*/
 .back-arrow {
   position: absolute;
   color: black;
@@ -604,6 +615,7 @@ ul a :hover {
   font-size: 25px;
 }
 
+/*resaturant image*/
 .cover-photo {
   width: 100%;
   height: 250px;
@@ -613,6 +625,7 @@ ul a :hover {
      object-fit: cover;
 }
 
+/*restaurant menu section*/
 .restaurant-menu {
   background-color: #f6f6f6;
   border-top-left-radius: 36px;
@@ -839,12 +852,12 @@ ul a :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   right: 0px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -868,6 +881,7 @@ ul a :hover {
           justify-content: center;
 }
 
+/*heart in restaurant menu page*/
 .heart-menu {
   width: 30px;
   height: 30px;
@@ -876,6 +890,7 @@ ul a :hover {
   color: black;
 }
 
+/*heart in home page*/
 .heart-index {
   width: 30px;
   height: 30px;
@@ -885,6 +900,7 @@ ul a :hover {
   right: 20px;
 }
 
+/*heart-icon-empty*/
 .heart-icon-empty {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -894,6 +910,7 @@ ul a :hover {
   opacity: 1;
 }
 
+/*heart-icon-full*/
 .heart-icon-full {
   -webkit-transition: -webkit-transform 800ms ease-in-out;
   transition: -webkit-transform 800ms ease-in-out;
@@ -910,6 +927,7 @@ ul a :hover {
   opacity: 0;
 }
 
+/*heart hover*/
 .heart-menu:hover .heart-icon-full,
 .heart-index:hover .heart-icon-full {
   -webkit-animation: fill 1000ms forwards;
