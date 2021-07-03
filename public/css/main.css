@@ -460,6 +460,21 @@
   width: 95%;
   margin: auto;
   margin-bottom: 17px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: -webkit-box-shadow 1s ease-out;
+  transition: -webkit-box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out, -webkit-box-shadow 1s ease-out;
+}
+
+.restaurant-box:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 @media screen and (min-width: 1260px) {

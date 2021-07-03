@@ -27,6 +27,13 @@
     width: 95%;
     margin: auto;
     margin-bottom: 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: box-shadow 1s ease-out;
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
     @include desktop {
         width: 24%;
     }
@@ -61,7 +68,6 @@ figcaption .new-restaurant {
     padding-left: 15px;
     @include flex-align-center;
     justify-content: space-between;
-    ;
 }
 
 .restaurant-name {
