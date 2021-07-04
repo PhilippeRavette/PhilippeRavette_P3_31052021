@@ -1,3 +1,4 @@
+/*Shrikhand font*/
 @font-face {
   font-family: 'shrikhandregular';
   src: url("../../fonts/Shrikhand-Regular.ttf");
@@ -5,6 +6,7 @@
   font-style: normal;
 }
 
+/*Roboto font*/
 @font-face {
   font-family: 'roboto';
   src: url("../../fonts/Roboto-Black.ttf"), url("../../fonts/Roboto-BlackItalic.ttf");
