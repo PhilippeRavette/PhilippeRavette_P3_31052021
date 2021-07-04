@@ -947,8 +947,8 @@ ul a :hover {
 /*heart hover*/
 .heart-menu:hover .heart-icon-full,
 .heart-index:hover .heart-icon-full {
-  -webkit-animation: fill 1000ms forwards;
-          animation: fill 1000ms forwards;
+  -webkit-animation: fill 2000ms forwards;
+          animation: fill 2000ms forwards;
 }
 
 .heart-menu:hover .heart-icon-empty,
