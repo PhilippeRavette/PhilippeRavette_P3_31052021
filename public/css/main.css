@@ -181,6 +181,24 @@
   }
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*load spinner*/
 .loader-spinner {
   position: fixed;
@@ -385,7 +403,7 @@
 .operation .function .number {
   position: absolute;
   color: white;
-  margin-left: -14.5px;
+  margin-left: -12px;
   background-color: #9356dc;
   border-radius: 30px;
   padding: 0.25em 0.5em;
@@ -704,6 +722,21 @@ ul a :hover {
   }
 }
 
+.starter {
+  -webkit-animation: fadein 3s ease-in-out;
+          animation: fadein 3s ease-in-out;
+}
+
+.plate {
+  -webkit-animation: fadein 9s ease-in-out;
+          animation: fadein 9s ease-in-out;
+}
+
+.dessert {
+  -webkit-animation: fadein 15s ease-in-out;
+          animation: fadein 15s ease-in-out;
+}
+
 .restaurant-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,8 +773,6 @@ ul a :hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 240px;
-  -webkit-animation: slide-menu 1s;
-          animation: slide-menu 1s;
 }
 
 @media screen and (min-width: 1260px) {
@@ -762,8 +793,6 @@ ul a :hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation: slide-menu 1s;
-          animation: slide-menu 1s;
 }
 
 @media screen and (min-width: 1260px) {
